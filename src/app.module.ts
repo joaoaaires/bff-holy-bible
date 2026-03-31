@@ -1,10 +1,21 @@
 import { Module } from '@nestjs/common';
+import { ConfigModule } from '@nestjs/config';
 
 import { PrismaModule } from './modules/prisma/prisma.module';
 import { AuthModule } from './modules/auth/auth.module';
+import { loadConfig, loadValidation } from '@config/index';
 
 @Module({
-  imports: [PrismaModule, AuthModule],
+  imports: [
+    ConfigModule.forRoot({
+      load: [loadConfig],
+      validate: loadValidation,
+      isGlobal: true,
+      cache: true,
+    }),
+    PrismaModule,
+    AuthModule,
+  ],
   controllers: [],
   providers: [],
 })

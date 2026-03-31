@@ -1,11 +1,14 @@
 import 'dotenv/config';
 import { Injectable } from '@nestjs/common';
 import * as bcrypt from 'bcrypt';
+import { ConfigService } from '@nestjs/config';
 
 @Injectable()
 export class PasswordHasherService {
+  constructor(private readonly configService: ConfigService) {}
+
   async hash(plain: string): Promise<string> {
-    const salt = parseInt(process.env.SALT ?? '10');
+    const salt = this.configService.getOrThrow<number>('salt');
     return bcrypt.hash(plain, salt);
   }
 

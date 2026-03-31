@@ -1,7 +1,8 @@
 import { Expose, plainToInstance } from 'class-transformer';
-import { User } from '../../../generated/prisma/browser';
 
-export class AuthResponse {
+import { UserModel } from '@generated/prisma/models';
+
+export class AuthResponseDto {
   @Expose()
   id!: string;
 
@@ -17,10 +18,13 @@ export class AuthResponse {
   @Expose()
   updatedAt!: string;
 
-  static fromEntity(user: User): AuthResponse {
+  @Expose()
+  token?: string;
+
+  static fromEntity(user: UserModel, token?: string): AuthResponseDto {
     return plainToInstance(
-      AuthResponse,
-      { ...user },
+      AuthResponseDto,
+      { ...user, token },
       { excludeExtraneousValues: true },
     );
   }

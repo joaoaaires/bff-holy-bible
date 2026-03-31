@@ -2,9 +2,12 @@ import { NestFactory } from '@nestjs/core';
 import { ValidationPipe } from '@nestjs/common';
 
 import { AppModule } from './app.module';
+import { ConfigService } from '@nestjs/config';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
+
+  const configService = app.get(ConfigService);
 
   // configuração do class-validator
   app.useGlobalPipes(
@@ -15,6 +18,8 @@ async function bootstrap() {
     }),
   );
 
-  await app.listen(process.env.PORT ?? 3000);
+  // configuração da port
+  const port = configService.getOrThrow<number>('port');
+  await app.listen(port);
 }
 void bootstrap();

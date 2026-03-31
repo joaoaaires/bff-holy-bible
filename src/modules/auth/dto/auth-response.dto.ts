@@ -22,6 +22,6 @@ export class AuthResponse {
       AuthResponse,
       { ...user },
       { excludeExtraneousValues: true },
-    ) as AuthResponse;
+    );
   }
 }

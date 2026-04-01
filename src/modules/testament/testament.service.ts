@@ -1,0 +1,16 @@
+import { Injectable } from '@nestjs/common';
+
+import { PrismaService } from '@modules/prisma/prisma.service';
+
+@Injectable()
+export class TestamentService {
+  constructor(private readonly prisma: PrismaService) {}
+
+  async readAll() {
+    return await this.prisma.testament.findMany({
+      include: {
+        books: true,
+      },
+    });
+  }
+}

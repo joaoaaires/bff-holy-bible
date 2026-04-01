@@ -20,3 +20,63 @@ model User {
   @@index([email, deletedAt])
   @@index([createdAt])
 }
+
+model Testament {
+  id          Int       @id @default(autoincrement())
+  code        String    @unique
+  name        String
+  description String
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  deletedAt   DateTime?
+
+  books Book[]
+
+  @@index([code])
+  @@index([createdAt])
+}
+
+model Book {
+  id        Int       @id @default(autoincrement())
+  order     Int
+  name      String
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+
+  chapters Chapter[]
+
+  testament   Testament? @relation(fields: [testamentId], references: [id])
+  testamentId Int?
+
+  @@unique([order, testamentId])
+}
+
+model Chapter {
+  id        Int       @id @default(autoincrement())
+  number    Int
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+
+  verses Verse[]
+
+  book   Book? @relation(fields: [bookId], references: [id])
+  bookId Int?
+
+  @@unique([number, bookId])
+}
+
+model Verse {
+  id        Int       @id @default(autoincrement())
+  number    Int
+  text      String
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+
+  chapter   Chapter? @relation(fields: [chapterId], references: [id])
+  chapterId Int?
+
+  @@unique([number, chapterId])
+}

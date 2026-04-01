@@ -4,6 +4,7 @@ import { ConfigModule } from '@nestjs/config';
 import { PrismaModule } from './modules/prisma/prisma.module';
 import { AuthModule } from './modules/auth/auth.module';
 import { loadConfig, loadValidation } from '@config/index';
+import { TestamentModule } from '@modules/testament/testament.module';
 
 @Module({
   imports: [
@@ -15,6 +16,7 @@ import { loadConfig, loadValidation } from '@config/index';
     }),
     PrismaModule,
     AuthModule,
+    TestamentModule,
   ],
   controllers: [],
   providers: [],

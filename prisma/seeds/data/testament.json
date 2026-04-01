@@ -1,0 +1,12 @@
+[
+  {
+    "code": "AT",
+    "name": "Antigo Testamento",
+    "description": "História da Salvação"
+  },
+  {
+    "code": "NT",
+    "name": "Novo Testamento",
+    "description": "Vida de Jesus"
+  }
+]

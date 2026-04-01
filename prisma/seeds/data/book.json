@@ -1,0 +1,367 @@
+[
+  {
+    "order": 1,
+    "name": "Gênesis",
+    "testament": 1
+  },
+  {
+    "order": 2,
+    "name": "Êxodo",
+    "testament": 1
+  },
+  {
+    "order": 3,
+    "name": "Levítico",
+    "testament": 1
+  },
+  {
+    "order": 4,
+    "name": "Números",
+    "testament": 1
+  },
+  {
+    "order": 5,
+    "name": "Deuteronômio",
+    "testament": 1
+  },
+  {
+    "order": 6,
+    "name": "Josué",
+    "testament": 1
+  },
+  {
+    "order": 7,
+    "name": "Juízes",
+    "testament": 1
+  },
+  {
+    "order": 8,
+    "name": "Rute",
+    "testament": 1
+  },
+  {
+    "order": 9,
+    "name": "I Samuel",
+    "testament": 1
+  },
+  {
+    "order": 10,
+    "name": "II Samuel",
+    "testament": 1
+  },
+  {
+    "order": 11,
+    "name": "I Reis",
+    "testament": 1
+  },
+  {
+    "order": 12,
+    "name": "II Reis",
+    "testament": 1
+  },
+  {
+    "order": 13,
+    "name": "I Crônicas",
+    "testament": 1
+  },
+  {
+    "order": 14,
+    "name": "II Crônicas",
+    "testament": 1
+  },
+  {
+    "order": 15,
+    "name": "Esdras",
+    "testament": 1
+  },
+  {
+    "order": 16,
+    "name": "Neemias",
+    "testament": 1
+  },
+  {
+    "order": 17,
+    "name": "Tobias",
+    "testament": 1
+  },
+  {
+    "order": 18,
+    "name": "Judite",
+    "testament": 1
+  },
+  {
+    "order": 19,
+    "name": "Ester",
+    "testament": 1
+  },
+  {
+    "order": 20,
+    "name": "Jó",
+    "testament": 1
+  },
+  {
+    "order": 21,
+    "name": "Salmos",
+    "testament": 1
+  },
+  {
+    "order": 22,
+    "name": "I Macabeus",
+    "testament": 1
+  },
+  {
+    "order": 23,
+    "name": "II Macabeus",
+    "testament": 1
+  },
+  {
+    "order": 24,
+    "name": "Provérbios",
+    "testament": 1
+  },
+  {
+    "order": 25,
+    "name": "Eclesiastes",
+    "testament": 1
+  },
+  {
+    "order": 26,
+    "name": "Cântico dos Cânticos",
+    "testament": 1
+  },
+  {
+    "order": 27,
+    "name": "Sabedoria",
+    "testament": 1
+  },
+  {
+    "order": 28,
+    "name": "Eclesiástico",
+    "testament": 1
+  },
+  {
+    "order": 29,
+    "name": "Isaías",
+    "testament": 1
+  },
+  {
+    "order": 30,
+    "name": "Jeremias",
+    "testament": 1
+  },
+  {
+    "order": 31,
+    "name": "Lamentações",
+    "testament": 1
+  },
+  {
+    "order": 32,
+    "name": "Baruc",
+    "testament": 1
+  },
+  {
+    "order": 33,
+    "name": "Ezequiel",
+    "testament": 1
+  },
+  {
+    "order": 34,
+    "name": "Daniel",
+    "testament": 1
+  },
+  {
+    "order": 35,
+    "name": "Oséias",
+    "testament": 1
+  },
+  {
+    "order": 36,
+    "name": "Joel",
+    "testament": 1
+  },
+  {
+    "order": 37,
+    "name": "Amós",
+    "testament": 1
+  },
+  {
+    "order": 38,
+    "name": "Abdias",
+    "testament": 1
+  },
+  {
+    "order": 39,
+    "name": "Jonas",
+    "testament": 1
+  },
+  {
+    "order": 40,
+    "name": "Miquéias",
+    "testament": 1
+  },
+  {
+    "order": 41,
+    "name": "Naum",
+    "testament": 1
+  },
+  {
+    "order": 42,
+    "name": "Habacuc",
+    "testament": 1
+  },
+  {
+    "order": 43,
+    "name": "Sofonias",
+    "testament": 1
+  },
+  {
+    "order": 44,
+    "name": "Ageu",
+    "testament": 1
+  },
+  {
+    "order": 45,
+    "name": "Zacarias",
+    "testament": 1
+  },
+  {
+    "order": 46,
+    "name": "Malaquias",
+    "testament": 1
+  },
+  {
+    "order": 1,
+    "name": "São Mateus",
+    "testament": 2
+  },
+  {
+    "order": 2,
+    "name": "São Marcos",
+    "testament": 2
+  },
+  {
+    "order": 3,
+    "name": "São Lucas",
+    "testament": 2
+  },
+  {
+    "order": 4,
+    "name": "São João",
+    "testament": 2
+  },
+  {
+    "order": 5,
+    "name": "Atos dos Apóstolos",
+    "testament": 2
+  },
+  {
+    "order": 6,
+    "name": "Romanos",
+    "testament": 2
+  },
+  {
+    "order": 7,
+    "name": "I Coríntios",
+    "testament": 2
+  },
+  {
+    "order": 8,
+    "name": "II Coríntios",
+    "testament": 2
+  },
+  {
+    "order": 9,
+    "name": "Gálatas",
+    "testament": 2
+  },
+  {
+    "order": 10,
+    "name": "Efésios",
+    "testament": 2
+  },
+  {
+    "order": 11,
+    "name": "Filipenses",
+    "testament": 2
+  },
+  {
+    "order": 12,
+    "name": "Colossenses",
+    "testament": 2
+  },
+  {
+    "order": 13,
+    "name": "I Tessalonicenses",
+    "testament": 2
+  },
+  {
+    "order": 14,
+    "name": "II Tessalonicenses",
+    "testament": 2
+  },
+  {
+    "order": 15,
+    "name": "I Timóteo",
+    "testament": 2
+  },
+  {
+    "order": 16,
+    "name": "II Timóteo",
+    "testament": 2
+  },
+  {
+    "order": 17,
+    "name": "Tito",
+    "testament": 2
+  },
+  {
+    "order": 18,
+    "name": "Filêmon",
+    "testament": 2
+  },
+  {
+    "order": 19,
+    "name": "Hebreus",
+    "testament": 2
+  },
+  {
+    "order": 20,
+    "name": "São Tiago",
+    "testament": 2
+  },
+  {
+    "order": 21,
+    "name": "I São Pedro",
+    "testament": 2
+  },
+  {
+    "order": 22,
+    "name": "II São Pedro",
+    "testament": 2
+  },
+  {
+    "order": 23,
+    "name": "I São João",
+    "testament": 2
+  },
+  {
+    "order": 24,
+    "name": "II São João",
+    "testament": 2
+  },
+  {
+    "order": 25,
+    "name": "III São João",
+    "testament": 2
+  },
+  {
+    "order": 26,
+    "name": "São Judas",
+    "testament": 2
+  },
+  {
+    "order": 27,
+    "name": "Apocalipse",
+    "testament": 2
+  }
+]

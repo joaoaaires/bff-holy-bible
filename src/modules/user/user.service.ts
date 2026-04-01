@@ -1,7 +1,6 @@
 import { Injectable } from '@nestjs/common';
 
 import { PasswordHasherService } from '@common/crypto/password-hasher.service';
-import { Prisma } from '@generated/prisma/browser';
 import { PrismaService } from '../prisma/prisma.service';
 import { EmailAlreadyExistsException, UserNotFoundException } from './errors';
 import { CreateUserDto } from './dto';
@@ -29,14 +28,12 @@ export class UserService {
       createUserDto.password,
     );
 
-    const data: Prisma.UserCreateInput = {
-      name: createUserDto.name,
-      email: createUserDto.email,
-      password: passwordCrypt,
-    };
-
     return this.prisma.user.create({
-      data,
+      data: {
+        name: createUserDto.name,
+        email: createUserDto.email,
+        password: passwordCrypt,
+      },
     });
   }
 

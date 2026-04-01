@@ -8,8 +8,18 @@ export class TestamentService {
 
   async readAll() {
     return await this.prisma.testament.findMany({
-      include: {
-        books: true,
+      select: {
+        id: true,
+        code: true,
+        name: true,
+        description: true,
+        books: {
+          select: {
+            id: true,
+            order: true,
+            name: true,
+          },
+        },
       },
     });
   }

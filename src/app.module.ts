@@ -5,6 +5,9 @@ import { PrismaModule } from './modules/prisma/prisma.module';
 import { AuthModule } from './modules/auth/auth.module';
 import { loadConfig, loadValidation } from '@config/index';
 import { TestamentModule } from '@modules/testament/testament.module';
+import { BookModule } from '@modules/book/book.module';
+import { ChapterModule } from '@modules/chapter/chapter.module';
+import { VerseModule } from '@modules/verse/verse.module';
 
 @Module({
   imports: [
@@ -17,6 +20,9 @@ import { TestamentModule } from '@modules/testament/testament.module';
     PrismaModule,
     AuthModule,
     TestamentModule,
+    BookModule,
+    ChapterModule,
+    VerseModule,
   ],
   controllers: [],
   providers: [],

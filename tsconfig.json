@@ -15,17 +15,17 @@
     "outDir": "./dist",
     "baseUrl": "./",
     "paths": {
-      "@common/*": ["./src/common/*"],
-      "@config/*": ["./src/config/*"],
-      "@generated/*": ["./src/generated/*"],
-      "@modules/*": ["./src/modules/*"]
+      "@modules/*": ["src/modules/*"],
+      "@config/*": ["src/config/*"],
+      "@generated/*": ["src/generated/*"],
+      "@common/*": ["src/common/*"]
     },
     "incremental": true,
     "skipLibCheck": true,
     "strictNullChecks": true,
     "forceConsistentCasingInFileNames": true,
-    "noImplicitAny": false,
-    "strictBindCallApply": false,
+    "noImplicitAny": true,
+    "strictBindCallApply": true,
     "noFallthroughCasesInSwitch": false
   }
 }

@@ -7,8 +7,9 @@ import {
   ApiTags,
   ApiUnauthorizedResponse,
 } from '@nestjs/swagger';
+
+import { AuthGuard } from '../auth/auth.guard';
 import { VerseService } from './verse.service';
-import { AuthGuard } from '@modules/auth/auth.guard';
 
 @ApiTags('Versículo')
 @ApiBearerAuth('JWT-auth')

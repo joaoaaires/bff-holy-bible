@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 
-import { PasswordHasherService } from '@common/crypto/password-hasher.service';
+import { PasswordHasherService } from '../../common/crypto/password-hasher.service';
 import { PrismaService } from '../prisma/prisma.service';
 import { EmailAlreadyExistsException, UserNotFoundException } from './errors';
 import { CreateUserDto } from './dto';

@@ -7,7 +7,8 @@ import {
   ApiTags,
   ApiUnauthorizedResponse,
 } from '@nestjs/swagger';
-import { AuthGuard } from '@modules/auth/auth.guard';
+
+import { AuthGuard } from '../auth/auth.guard';
 import { BookService } from './book.service';
 
 @ApiTags('Livro')

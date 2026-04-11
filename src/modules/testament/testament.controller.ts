@@ -7,7 +7,7 @@ import {
   ApiUnauthorizedResponse,
 } from '@nestjs/swagger';
 
-import { AuthGuard } from '@modules/auth/auth.guard';
+import { AuthGuard } from '../auth/auth.guard';
 import { TestamentService } from './testament.service';
 
 @ApiTags('Testamento')

@@ -1,7 +1,7 @@
 import { JwtService } from '@nestjs/jwt';
 import { Injectable } from '@nestjs/common';
 
-import { PasswordHasherService } from '@common/crypto/password-hasher.service';
+import { PasswordHasherService } from '../../common/crypto/password-hasher.service';
 import { UserService } from '../user/user.service';
 import { AuthResponseDto, LoginDto, RegisterDto } from './dto';
 import { UserUnauthorizedException } from './errors';
